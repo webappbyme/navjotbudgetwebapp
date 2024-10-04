@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Budget Calculator</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="budget.html">Budget Calculator</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Budget Calculator Content -->
+  <div class="container">
+    <div class="calculator-grid">
+      <div class="budget-section">
+        <h2>Budget</h2>
+        <input type="number" id="totalAmount" placeholder="Enter Total Amount">
+        <button onclick="setBudget()">Set Budget</button>
+      </div>
+
+      <div class="expenses-section">
+        <h2>Expenses</h2>
+        <input type="text" id="expenseTitle" placeholder="Enter Title of Product">
+        <input type="number" id="expenseAmount" placeholder="Enter Cost of Product">
+        <button onclick="addExpense()">Check Amount</button>
+      </div>
+    </div>
+
+    <div class="summary-section">
+      <div class="summary-box">
+        <h3>Total Budget</h3>
+        <p id="totalBudgetDisplay">0</p>
+      </div>
+      <div class="summary-box">
+        <h3>Expenses</h3>
+        <p id="totalExpensesDisplay">0</p>
+      </div>
+      <div class="summary-box">
+        <h3>Balance</h3>
+        <p id="balanceDisplay">0</p>
+      </div>
+    </div>
+
+    <div class="expense-list-section">
+      <h3>Expense List</h3>
+      <ul id="expenseList"></ul>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Navjot's Personal Finance Manager. All Rights Reserved.</p>
+    <p>Contact: info@navjotfinance.com | Phone: +123-456-7890</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
